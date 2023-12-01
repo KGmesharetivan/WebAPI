@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebAPI Activity</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS (if needed) -->
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- History API -->
+    <div class="container">
+      <h1 class="mt-5">History API</h1>
+      <button id="go-back" class="btn btn-primary mt-3">Go Back</button>
+      <button id="go-forward" class="btn btn-secondary mt-3">Go Forward</button>
+      <button id="load-content" class="btn btn-success mt-3">
+        Load New Content
+      </button>
+      <div id="content" class="mt-4"></div>
+    </div>
+
+    <!-- Storage API  -->
+    <div class="container">
+      <h1 class="mt-5">Storage API</h1>
+      <div class="form-group mt-3">
+        <label for="dataInput">Enter Data:</label>
+        <input type="text" id="dataInput" class="form-control" />
+      </div>
+      <button id="saveData" class="btn btn-primary">
+        Save to Local Storage
+      </button>
+      <button id="loadData" class="btn btn-secondary">
+        Load from Local Storage
+      </button>
+      <div id="result" class="mt-3"></div>
+    </div>
+
+    <!-- Geolocation API  -->
+    <div class="container">
+      <h1 class="mt-5">Geolocation API</h1>
+      <button id="getLocation" class="btn btn-primary mt-3">
+        Get Current Location
+      </button>
+      <div id="location" class="mt-3"></div>
+    </div>
+
+    <!-- Third Party APIs  -->
+    <div class="container">
+      <h1 class="mt-5">Country Information</h1>
+      <div class="form-group mt-3">
+        <label for="countryInput">Enter Country Name:</label>
+        <input type="text" id="countryInput" class="form-control" />
+      </div>
+      <button id="getCountryInfo" class="btn btn-primary">
+        Get Country Info
+      </button>
+      <div id="countryResult" class="mt-3"></div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
